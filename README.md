@@ -2,8 +2,10 @@
 
 A really simple theme as seen on [my blog](http://zen.id.au/)
 
-Requires an extra property in your `_config.yaml` file
+## Notes
 
+### Gravatar & caption
+Requires an extra property in your `_config.yaml` file
 ```yml
 author :
   gravatar :
@@ -13,8 +15,18 @@ author :
 
 If you don't want to use a Gravatar for the avatar image, just go to `_includes/themes/zen/default.html` and set your own image url there.
 
-Another thing to note: the bio text which sits underneath the image is just hardcoded html in the `_includes/themes/zen/default.html` file - handle this as you wish (I couldn't be bothered implementing a cleaner solution for this, but including another file with a bio is not a difficult task if you wish to do so)
+### Bio
+The bio text which sits underneath the image is just hardcoded html in the `_includes/themes/zen/default.html` file - handle this as you wish (I couldn't be bothered implementing a cleaner solution for this, but including another file with a bio is not a difficult task if you wish to do so)
 
-Also included is a `index.html` file which displays a basic list of posts and dates, feel free to modify this.
+### Homepage layout
+Included is a `index.html` file which displays a basic list of posts and dates, feel free to modify this.
+
+## Installation
+
+Just run
+`rake theme:install git="https://github.com/Zensavona/theme-zen.git"`
+
+And you're done.
+
 
 Enjoy!
